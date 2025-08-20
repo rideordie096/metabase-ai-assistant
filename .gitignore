@@ -53,3 +53,14 @@ CLAUDE_DESKTOP_TEST.md
 # Cache
 .cache/
 .metabase-cache/
+
+# PM2
+.pm2/
+ecosystem.config.js.backup
+
+# Docker
+.dockerignore
+
+# Production logs
+logs/
+*.log

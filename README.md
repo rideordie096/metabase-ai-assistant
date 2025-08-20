@@ -432,7 +432,66 @@ npm run test:coverage
 - Use prefix validation for AI-created objects
 - Monitor database operations for security compliance
 
-## 📈 Yol Haritası
+## 🚀 Production Deployment
+
+### Option 1: PM2 Process Manager (Recommended)
+```bash
+# Install PM2 globally
+npm install -g pm2
+
+# Start MCP server with PM2
+npm run pm2:start
+
+# Monitor and manage
+npm run pm2:logs
+npm run pm2:restart
+npm run pm2:stop
+
+# Auto-restart on system reboot
+pm2 startup
+pm2 save
+```
+
+### Option 2: Docker Container
+```bash
+# Build and run with Docker Compose
+npm run docker:run
+
+# Monitor logs
+npm run docker:logs
+
+# Stop containers
+npm run docker:stop
+```
+
+### Option 3: Cloud Deployment
+- **Railway**: One-click deploy with `railway.json`
+- **Heroku**: Deploy with Heroku CLI (see `deploy/heroku-deploy.md`)
+- **DigitalOcean**: App Platform with Docker
+- **AWS**: ECS Fargate or EC2 with systemd service
+
+### Option 4: Systemd Service (Linux)
+```bash
+# Copy service file
+sudo cp metabase-ai-mcp.service /etc/systemd/system/
+
+# Enable and start service
+sudo systemctl enable metabase-ai-mcp
+sudo systemctl start metabase-ai-mcp
+
+# Monitor service
+sudo systemctl status metabase-ai-mcp
+sudo journalctl -u metabase-ai-mcp -f
+```
+
+### Production Scripts
+```bash
+npm run mcp:prod          # Production mode
+npm run test:connection   # Health check
+npm run lint             # Code quality check
+```
+
+## 📈 Roadmap
 
 - [ ] Natural Language Processing geliştirmeleri
 - [ ] Görsel sorgu builder
