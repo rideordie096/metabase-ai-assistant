@@ -3,8 +3,8 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-brightgreen.svg)](https://nodejs.org/)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue.svg)](https://modelcontextprotocol.io/)
-[![GitHub stars](https://img.shields.io/github/stars/onmartech/metabase-ai-assistant.svg?style=social&label=Star)](https://github.com/onmartech/metabase-ai-assistant)
-[![GitHub forks](https://img.shields.io/github/forks/onmartech/metabase-ai-assistant.svg?style=social&label=Fork)](https://github.com/onmartech/metabase-ai-assistant/fork)
+[![GitHub stars](https://img.shields.io/github/stars/enessari/metabase-ai-assistant.svg?style=social&label=Star)](https://github.com/enessari/metabase-ai-assistant)
+[![GitHub forks](https://img.shields.io/github/forks/enessari/metabase-ai-assistant.svg?style=social&label=Fork)](https://github.com/enessari/metabase-ai-assistant/fork)
 
 AI-powered assistant that connects to **Metabase** and **PostgreSQL databases** directly via **Model Context Protocol (MCP)** for **Claude Desktop** and **Claude Code**. Creates models, SQL queries, metrics, and dashboards using both Metabase API and direct database connections.
 
